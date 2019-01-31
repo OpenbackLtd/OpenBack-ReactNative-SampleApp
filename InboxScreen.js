@@ -7,12 +7,11 @@
 
 import React from 'react'
 import { NativeModules, NativeEventEmitter, Platform, FlatList, TouchableHighlight, StyleSheet, Text, View, Image } from 'react-native';
+import { OpenBackAppInbox } from 'react-native-openback'
 import moment from 'moment'
 
 import UnreadImage from './img/unread.png'
 import ReadImage from './img/read.png'
-
-const OpenBackAppInbox = NativeModules.RNOpenBackAppInbox;
 
 export default class InboxScreen extends React.Component {
     static navigationOptions = {

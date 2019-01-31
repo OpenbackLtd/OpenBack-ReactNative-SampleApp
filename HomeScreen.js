@@ -7,8 +7,7 @@
 
 import React from 'react'
 import { NativeModules, Platform, TextInput, StyleSheet, ScrollView, View, Text, Button } from 'react-native';
-
-const OpenBack = NativeModules.RNOpenBack;
+import { OpenBack } from 'react-native-openback'
 
 export default class HomeScreen extends React.Component {
     static navigationOptions = {
