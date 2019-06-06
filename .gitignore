@@ -57,6 +57,8 @@ captures/
 *.ipr
 *~
 *.swp
+android/app/.classpath
+android/app/.project
 
 # node.js
 #
