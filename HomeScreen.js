@@ -72,9 +72,11 @@ export default class HomeScreen extends React.Component {
                         color='#E74B99'
                         onPress={() => { 
                             OpenBack.logGoal("test", this.state.goalStep, this.state.goalValue, (error) => { });
-                            this.setState({
-                                goalStep: this.state.goalStep + 1,
-                                goalValue: this.state.goalValue + 3.1
+                            this.setState(prevState => {
+                                return {
+                                    goalStep: prevState.goalStep + 1,
+                                    goalValue: prevState.goalValue + 3.1
+                                }
                             });
                          }}
                         title={`Log goal 'test' with step ${this.state.goalStep} and value ${this.state.goalValue.toFixed(2)}`}
